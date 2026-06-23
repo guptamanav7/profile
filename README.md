@@ -14,6 +14,7 @@ Key files:
 - `reading/index.html` - reading list page
 - `reading/reading.js` - reading list data and rendering
 - `robots.txt`, `sitemap.xml`, `llms.txt` - SEO and discovery files
+- `_headers` - Cloudflare Pages security headers
 - `portrait.webp`, `og-image.png` - image assets
 
 ## Local Preview
@@ -86,6 +87,11 @@ git push -u origin main
 - Confirm `index.html` is at the repository root.
 - Confirm `reading/index.html` is committed.
 - Confirm image assets are committed.
+- Confirm `_headers` is committed so Cloudflare applies the security headers.
 - Leave build command as `exit 0`.
 - Set build output directory to `/`.
 - Add a custom domain in Cloudflare Pages after the first successful deploy, if desired.
+
+## Security Headers
+
+Cloudflare Pages reads the `_headers` file at deploy time. This project includes headers for content sniffing protection, clickjacking protection, referrer policy, permissions policy, and a Content Security Policy tuned for this static site.
