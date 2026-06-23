@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://guptamanav.me/sitemap.xml
+LLMS: https://guptamanav.me/llms.txt
