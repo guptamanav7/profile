@@ -143,12 +143,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // --- Entry Reveal & Scroll Stagger Animations ---
-  // Reveal content containers
-  setTimeout(() => {
-    if (themeToggleContainer) themeToggleContainer.style.opacity = "1";
-    if (contentContainer) contentContainer.style.opacity = "1";
-  }, 100);
-
   // Setup intersection observer for scroll animations
   const observerOptions = {
     root: null, // viewport

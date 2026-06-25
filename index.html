@@ -36,7 +36,7 @@
     <meta property="og:image:alt" content="Portrait of Manav Gupta" />
     <meta property="og:url" content="https://guptamanav.me/" />
     <meta property="og:locale" content="en_US" />
-    <meta property="og:updated_time" content="2026-06-23T00:00:00-07:00" />
+    <meta property="og:updated_time" content="2026-06-24T00:00:00-07:00" />
     <meta property="profile:first_name" content="Manav" />
     <meta property="profile:last_name" content="Gupta" />
 
@@ -73,13 +73,27 @@
           "jobTitle": "Director, Global Trust Defense",
           "worksFor": {
             "@type": "Organization",
-            "name": "Airbnb"
+            "name": "Airbnb",
+            "url": "https://www.airbnb.com/"
           },
+          "workedFor": [
+            { "@type": "Organization", "name": "Airbnb", "url": "https://www.airbnb.com/" },
+            { "@type": "Organization", "name": "Meta", "url": "https://www.meta.com/" },
+            { "@type": "Organization", "name": "Intuit", "url": "https://www.intuit.com/" },
+            { "@type": "Organization", "name": "Visa", "url": "https://www.visa.com/" },
+            { "@type": "Organization", "name": "PayPal", "url": "https://www.paypal.com/" },
+            { "@type": "Organization", "name": "Microsoft", "url": "https://www.microsoft.com/" }
+          ],
           "description": "Global product and operations executive with 25+ years across Payments, Trust & Safety, and Risk Management.",
           "mainEntityOfPage": {
             "@id": "https://guptamanav.me/#profilepage"
           },
-          "image": "https://guptamanav.me/og-image.png",
+          "image": {
+            "@type": "ImageObject",
+            "url": "https://guptamanav.me/og-image.png",
+            "width": 1536,
+            "height": 1024
+          },
           "url": "https://guptamanav.me/",
           "sameAs": [
             "https://www.linkedin.com/in/guptam/",
@@ -163,7 +177,7 @@
           "url": "https://guptamanav.me/",
           "name": "Manav Gupta — Product, Operations, Trust & Safety Executive",
           "description": "Professional profile of Manav Gupta, a global product and operations executive with 25+ years across Payments, Trust & Safety, and Risk Management.",
-          "dateModified": "2026-06-23",
+          "dateModified": "2026-06-24",
           "isPartOf": {
             "@id": "https://guptamanav.me/#website"
           },
@@ -176,7 +190,11 @@
             "width": 1536,
             "height": 1024
           },
-          "inLanguage": "en-US"
+          "inLanguage": "en-US",
+          "speakableSpecification": {
+            "@type": "SpeakableSpecification",
+            "cssSelector": ["#summary", "#facts", "#faq"]
+          }
         },
         {
           "@type": "BreadcrumbList",
@@ -233,8 +251,43 @@
                 "@type": "Answer",
                 "text": "Manav Gupta earned an MBA from Ivey Business School at Western University, an MS from DePaul University, and a BS from Michigan Technological University."
               }
+            },
+            {
+              "@type": "Question",
+              "name": "What patents does Manav Gupta hold?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Manav Gupta holds 4 issued US patents in payments and commerce technology, covering dynamic widget generation, social checkout widget generation, payment platform interface widgets, and customer purchase propensity systems."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What has Manav Gupta built at Airbnb?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "At Airbnb, Manav Gupta directed a multi-million dollar Trust Defense portfolio covering Financial Fraud, Content Integrity, Identity, and Safety. He oversaw agentic AI for decision accuracy, generative AI for case summarization, and ML-driven risk signals, and led a team including ex-FBI, Secret Service, and Interpol agents handling life-safety incidents worldwide."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is Manav Gupta's background in payments?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Manav Gupta has deep payments expertise spanning PayPal (dispute resolution, ACH and card claims), Visa (dispute resolution platform, Visa Checkout/V.me, Visa Developer Platform, CyberSource acquisition), Meta (Facebook payment gateway across Stripe, PayPal, Cielo, and Shopify), and Intuit (QuickBooks Payments). He holds 4 US patents in payments and commerce technology."
+              }
             }
           ]
+        },
+        {
+          "@type": "Book",
+          "@id": "https://guptamanav.me/#publication-hci",
+          "name": "User-Centered Web Site Development: A Human-Computer Interaction Approach",
+          "author": [
+            { "@type": "Person", "@id": "https://guptamanav.me/#person" }
+          ],
+          "contributor": { "@id": "https://guptamanav.me/#person" },
+          "genre": "Computer Science",
+          "about": "Human-Computer Interaction, web design, usability"
         },
         {
           "@type": "ItemList",
@@ -299,7 +352,7 @@
         </header>
 
         <!-- Floating Theme Toggle Button -->
-        <div class="fixed top-5 right-6 z-40 no-print theme-toggle-container" style="opacity: 0;">
+        <div class="fixed top-5 right-6 z-40 no-print theme-toggle-container">
           <button aria-label="Switch to dark mode" data-testid="button-theme-toggle" class="w-8 h-8 flex items-center justify-center text-muted-foreground hover:text-foreground transition-colors duration-200 border border-border bg-background-80 backdrop-blur-sm rounded-sm">
             <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
               <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 15.07A9.004 9.004 0 0 1 8.93 2.25 9 9 0 1 0 21.75 15.07z"></path>
@@ -308,7 +361,7 @@
         </div>
 
         <main class="max-w-3xl mx-auto px-6 py-24 md:py-32">
-          <div class="space-y-28 content-container" style="opacity: 0;">
+          <div class="space-y-28 content-container">
             
             <!-- Hero Section -->
             <section class="flex flex-col md:flex-row md:items-end gap-10 fade-in-section" id="hero">
@@ -399,6 +452,18 @@
                   <div class="border-t border-border py-6">
                     <h3 class="font-medium text-foreground text-sm mb-1">What is Manav Gupta&#x27;s education?</h3>
                     <p class="text-foreground/60 text-sm leading-relaxed">He earned an MBA from Ivey Business School at Western University, an MS from DePaul University, and a BS from Michigan Technological University.</p>
+                  </div>
+                  <div class="border-t border-border py-6">
+                    <h3 class="font-medium text-foreground text-sm mb-1">What patents does Manav Gupta hold?</h3>
+                    <p class="text-foreground/60 text-sm leading-relaxed">Manav Gupta holds 4 issued US patents in payments and commerce technology, covering dynamic widget generation, social checkout widget generation, payment platform interface widgets, and customer purchase propensity systems.</p>
+                  </div>
+                  <div class="border-t border-border py-6">
+                    <h3 class="font-medium text-foreground text-sm mb-1">What has Manav Gupta built at Airbnb?</h3>
+                    <p class="text-foreground/60 text-sm leading-relaxed">At Airbnb, Manav Gupta directed a multi-million dollar Trust Defense portfolio covering Financial Fraud, Content Integrity, Identity, and Safety. He oversaw agentic AI for decision accuracy, generative AI for case summarization, and ML-driven risk signals, and led a team including ex-FBI, Secret Service, and Interpol agents handling life-safety incidents worldwide.</p>
+                  </div>
+                  <div class="border-t border-border py-6">
+                    <h3 class="font-medium text-foreground text-sm mb-1">What is Manav Gupta&#x27;s background in payments?</h3>
+                    <p class="text-foreground/60 text-sm leading-relaxed">Manav Gupta has deep payments expertise spanning PayPal (dispute resolution, ACH and card claims), Visa (dispute resolution platform, Visa Checkout/V.me, Visa Developer Platform, CyberSource acquisition), Meta (Facebook payment gateway across Stripe, PayPal, Cielo, and Shopify), and Intuit (QuickBooks Payments). He holds 4 US patents in payments and commerce technology.</p>
                   </div>
                   <div class="border-t border-border"></div>
                 </div>

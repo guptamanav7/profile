@@ -1444,8 +1444,17 @@ ul {
   transform: translateY(0);
 }
 
-.content-container, .theme-toggle-container {
-  transition: opacity 0.5s ease-out;
+.content-container {
+  animation: containerFadeIn 0.5s ease-out 0.1s both;
+}
+
+.theme-toggle-container {
+  animation: containerFadeIn 0.5s ease-out 0.3s both;
+}
+
+@keyframes containerFadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
 
 /* Print Layout Optimization Stylesheet */
